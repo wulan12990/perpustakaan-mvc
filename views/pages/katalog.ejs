@@ -1,0 +1,20 @@
+<%- include('../partials/header') %>
+<div class="card">
+  <h1>Katalog Buku</h1>
+  <table>
+    <thead>
+      <tr><th>Judul</th><th>Penulis</th><th>Tahun</th><th>Kategori</th></tr>
+    </thead>
+    <tbody>
+      <% buku.forEach(b => { %>
+        <tr>
+          <td><%= b.judul %></td>
+          <td><%= b.penulis %></td>
+          <td><%= b.tahun %></td>
+          <td><%= b.kategori %></td>
+        </tr>
+      <% }) %>
+    </tbody>
+  </table>
+</div>
+<%- include('../partials/footer') %>
